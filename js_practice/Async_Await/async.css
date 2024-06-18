@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+}
+#display_btn{
+    margin: 30px;
+    background-color: aqua;
+    font-size: medium;
+    padding: 3px;
+    border-radius: 5px;
+}
+#content{
+    margin: 50px;
+}

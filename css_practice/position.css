@@ -1,0 +1,29 @@
+/* .abs{
+    
+    position: absolute;
+    left:100px;
+    top:150px;
+} */
+
+/* 
+.sticky{
+    position: sticky;
+    background-color: aquamarine;
+    border : 1px solid green;
+    top:0px;
+} */
+
+
+/* 
+.fixed{
+    position: fixed;
+    border:1px solid green;
+    bottom: 0px;
+    right: 0px;
+} */
+
+.relative{
+    position: relative;
+    border:1px solid green;
+    left:50%
+}

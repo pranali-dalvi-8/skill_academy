@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="myPromises"></div>
+
+
+    <script>
+        // async function myfunc(){
+        //     // throw new Error("Error msg")
+        //     return "hello";
+        // }
+        // function success(value){
+        //     console.log("this is succeesful "+ value);
+        // }
+        // function error(value){
+        //     console.log("some error occured " + value)
+        // }
+        // myfunc().then(success,error);
+
+
+  
+        // async function myfunc(seconds){
+        //     let date=new Date();
+        //     let current=new Date();
+        //     while(current-date<seconds*1000){
+        //         current=new Date();
+        //     }
+        //     throw new Error("Error msg")
+        //     return "hello";
+        // }
+        // function success(value){
+        //     console.log("this is succeesful "+ value);
+        // }
+        // function error(value){
+        //     console.log("some error occured " + value)
+        // }
+        // myfunc(5).then(success,error);
+        // console.log("this is executed")
+
+
+
+
+
+        async function myFunc(){
+            let myPromise=new Promise(function(resolve, reject){
+                resolve("this is resolve");
+            });
+       
+        document.getElementById('myPromises').innerHTML=await myPromise;
+        }
+        myFunc();
+    </script>
+</body>
+</html>

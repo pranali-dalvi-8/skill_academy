@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <p id="para1"></p>
+
+    <button id="formsubmitbutton">submit</button>
+     <div>
+
+     </div>
+     <p id="togelpara"> Now this is visible paragraph but after click btn it is invisible :)</p>
+     <button id="togelbtn">Click Here!</button>
+     
+
+
+     <div>
+
+     </div>
+     <p id="enlarge">double click and i will grow</p>
+    <script>
+
+        //  TASK 1  :select para       
+
+        document.getElementById("para").innerHTML="hello this is first example of dynamic js or dom";
+        document.getElementById("para1").innerHTML="I am learning DOM manipulation";
+
+        // Task 2  : events
+
+        document.getElementById("formsubmitbutton").addEventListener('click',function(){
+            alert("your form has been succesfully");
+        });
+
+        // Task 3 : toggelling
+        
+        document.getElementById("togelbtn").addEventListener('click',function(){
+            var textElement=document.getElementById("togelpara");
+            if(textElement.style.display==='none'){
+                textElement.style.display='block';
+            }
+            else{
+                textElement.style.display=  'none';
+            }
+        });
+
+        // task 4 : double click
+
+        document.getElementById("enlarge").addEventListener('dblclick',function(){
+          var fonsize=window.getComputedStyle(this).fontSize ;
+          this.style.fontSize=(parseFloat(fonsize)+2)+'px';
+
+        });
+
+
+    </script>
+</body>
+</html>
