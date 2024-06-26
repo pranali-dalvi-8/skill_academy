@@ -16,6 +16,7 @@ fetch('https://dog.ceo/api/breeds/image/random')
 })
 .then(data=>{
     console.log(data);
+    
     let output=`<img src=${data.message}>`;
 
     let dogimg=document.getElementById('dog-img');
